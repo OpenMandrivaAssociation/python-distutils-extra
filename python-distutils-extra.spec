@@ -1,12 +1,11 @@
 Name:		python-distutils-extra
-Version:	2.18
+Version:	2.20
 Release:	%mkrel 1
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
 URL:		https://launchpad.net/python-distutils-extra
-# Use Source from Debian because upstream was moved to Launchpad 
-Source0:	http://ftp.de.debian.org/debian/pool/main/p/%{name}/%{name}_%{version}.tar.gz
+Source0:	http://launchpad.net/python-distutils-extra/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildArch:	noarch
 BuildRequires:	python-setuptools
@@ -18,10 +17,7 @@ and GNOME documentation into your build and installation process.
 
 
 %prep
-%setup -q -c "%{name}-%{version}"
-rm -rf debian/debian
-mv debian/* .
-
+%setup -q
 
 %build
 python ./setup.py build
