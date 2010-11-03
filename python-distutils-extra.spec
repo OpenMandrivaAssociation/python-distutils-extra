@@ -1,6 +1,6 @@
 Name:		python-distutils-extra
 Version:	2.20
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
