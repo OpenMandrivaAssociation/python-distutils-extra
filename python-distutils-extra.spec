@@ -1,5 +1,5 @@
 Name:		python-distutils-extra
-Version:	2.22
+Version:	2.23
 Release:	%mkrel 1
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
