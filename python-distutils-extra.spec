@@ -1,12 +1,11 @@
 Name:		python-distutils-extra
-Version:	2.23
+Version:	2.26
 Release:	%mkrel 1
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
 URL:		https://launchpad.net/python-distutils-extra
 Source0:	http://launchpad.net/python-distutils-extra/trunk/%{version}/+download/%{name}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildArch:	noarch
 BuildRequires:	python-setuptools
        
@@ -24,10 +23,8 @@ python ./setup.py build
 
 
 %install
-rm -rf %{buildroot}
 python setup.py install --root=%{buildroot} 
 chmod a+x %{buildroot}%{python_sitelib}/DistUtilsExtra/command/build_extra.py
-
 
 %clean
 rm -rf %{buildroot}
