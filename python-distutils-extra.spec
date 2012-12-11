@@ -28,3 +28,55 @@ chmod a+x %{buildroot}%{python_sitelib}/DistUtilsExtra/command/build_extra.py
 %{python_sitelib}/DistUtilsExtra/
 %{python_sitelib}/python_distutils_extra*.egg-info
 
+
+
+%changelog
+* Sat Mar 03 2012 Matthew Dawkins <mattydaw@mandriva.org> 2.32-1
++ Revision: 781952
+- new version 2.32
+
+* Sat May 14 2011 Sandro Cazzaniga <kharec@mandriva.org> 2.26-1
++ Revision: 674573
+- update to new version..
+
+* Thu Nov 25 2010 Funda Wang <fwang@mandriva.org> 2.23-1mdv2011.0
++ Revision: 600933
+- new version 2.23
+
+* Fri Nov 12 2010 Ahmad Samir <ahmadsamir@mandriva.org> 2.22-1mdv2011.0
++ Revision: 596455
+- Update to 2.22
+
+* Wed Nov 03 2010 Götz Waschk <waschk@mandriva.org> 2.20-2mdv2011.0
++ Revision: 592874
+- rebuild for new python 2.7
+
+* Sat Aug 07 2010 Ahmad Samir <ahmadsamir@mandriva.org> 2.20-1mdv2011.0
++ Revision: 567256
+- update to 2.20
+
+* Fri Apr 16 2010 Michael Scherer <misc@mandriva.org> 2.18-1mdv2010.1
++ Revision: 535622
+- update to new version 2.18
+
+* Sat Jan 30 2010 Frederik Himpe <fhimpe@mandriva.org> 2.16-1mdv2010.1
++ Revision: 498551
+- update to new version 2.16
+
+* Wed Jan 06 2010 Frederik Himpe <fhimpe@mandriva.org> 2.15-1mdv2010.1
++ Revision: 486836
+- update to new version 2.15
+
+* Thu Dec 24 2009 Frederik Himpe <fhimpe@mandriva.org> 2.13-1mdv2010.1
++ Revision: 481992
+- update to new version 2.13
+
+* Thu Nov 12 2009 Frederik Himpe <fhimpe@mandriva.org> 2.12-1mdv2010.1
++ Revision: 465316
+- update to new version 2.12
+
+* Sun Jul 12 2009 Frederik Himpe <fhimpe@mandriva.org> 2.3-1mdv2010.0
++ Revision: 394904
+- Create package based on Fedora's SPEC
+- create python-distutils-extra
+
