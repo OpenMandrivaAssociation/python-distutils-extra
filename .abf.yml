@@ -1,2 +1,5 @@
-sources:
+removed_sources:
+  python-distutils-extra-2.32.tar.gz: db8b86be8f384554ad1c5f64d5af30ad9a50d65c
   python-distutils-extra-2.37.tar.gz: fe513962c8f41a7afd7ecd17a3f69d867506f3e8
+sources:
+  python-distutils-extra-2.38.tar.gz: db9ac81daf3e069b8838ae6d379abac2f0094663
