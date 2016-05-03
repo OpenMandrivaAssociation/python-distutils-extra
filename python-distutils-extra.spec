@@ -1,6 +1,6 @@
 Name:		python-distutils-extra
 Version:	2.38
-Release:	2
+Release:	3
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
@@ -10,22 +10,22 @@ Source0:	https://launchpad.net/python-distutils-extra/trunk/2.38/+download/%{nam
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 
-
+%rename		python3-distutils-extra
 
 %description
 python-distutils-extra allows you to easily integrate gettext, themed icons
 and GNOME documentation into your build and installation process. 
 
 
-%package -n python3-distutils-extra
-Summary: Enhancements to the Python 3 build system
+%package -n python2-distutils-extra
+Summary: Enhancements to the Python 2 build system
 Group: Development/Python
-Provides: python3-distutils-extra = %{version}-%{release}
-BuildRequires:  python3-distribute
-BuildRequires:  python3-devel
+Provides: python2-distutils-extra = %{version}-%{release}
+BuildRequires:  python2-distribute
+BuildRequires:  python2-devel
 
 
-%description -n python3-distutils-extra
+%description -n python2-distutils-extra
 python3-distutils-extra allows you to easily integrate gettext, themed icons
 and GNOME documentation into your build and installation process. 
 
@@ -36,7 +36,7 @@ cp -r python2 python3
 
 %build
 pushd python2
-%__python ./setup.py build
+%__python2 ./setup.py build
 popd
 
 pushd python3
@@ -45,9 +45,9 @@ popd
 
 %install
 pushd python2
-%__python setup.py install --root=%{buildroot} 
+%__python2 setup.py install --root=%{buildroot} 
 popd
-chmod a+x %{buildroot}%{python_sitelib}/DistUtilsExtra/command/build_extra.py
+chmod a+x %{buildroot}%{python2_sitelib}/DistUtilsExtra/command/build_extra.py
 
 pushd python3
 %__python3 setup.py install --root=%{buildroot} 
@@ -56,14 +56,14 @@ popd
 
 
 %files
-%doc python2/doc/*
+%doc python3/doc/*
 %{python_sitelib}/DistUtilsExtra/
 %{python_sitelib}/python_distutils_extra*.egg-info
 
-%files -n python3-distutils-extra
-%doc python3/doc/*
-%{python3_sitelib}/DistUtilsExtra/
-%{python3_sitelib}/python_distutils_extra*.egg-info
+%files -n python2-distutils-extra
+%doc python2/doc/*
+%{python2_sitelib}/DistUtilsExtra/
+%{python2_sitelib}/python_distutils_extra*.egg-info
 
 
 %changelog
