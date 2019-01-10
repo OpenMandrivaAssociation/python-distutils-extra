@@ -1,6 +1,6 @@
 Name:		python-distutils-extra
-Version:	2.38
-Release:	3
+Version:	2.39
+Release:	1
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
@@ -14,7 +14,7 @@ BuildRequires:	python-setuptools
 
 %description
 python-distutils-extra allows you to easily integrate gettext, themed icons
-and GNOME documentation into your build and installation process. 
+and GNOME documentation into your build and installation process.
 
 
 %package -n python2-distutils-extra
@@ -27,7 +27,7 @@ BuildRequires:  python2-devel
 
 %description -n python2-distutils-extra
 python3-distutils-extra allows you to easily integrate gettext, themed icons
-and GNOME documentation into your build and installation process. 
+and GNOME documentation into your build and installation process.
 
 %prep
 %setup -q -c
@@ -45,12 +45,12 @@ popd
 
 %install
 pushd python2
-%__python2 setup.py install --root=%{buildroot} 
+%__python2 setup.py install --root=%{buildroot}
 popd
 chmod a+x %{buildroot}%{python2_sitelib}/DistUtilsExtra/command/build_extra.py
 
 pushd python3
-%__python3 setup.py install --root=%{buildroot} 
+%__python3 setup.py install --root=%{buildroot}
 popd
 
 
@@ -115,5 +115,3 @@ popd
 + Revision: 394904
 - Create package based on Fedora's SPEC
 - create python-distutils-extra
-
-
