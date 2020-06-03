@@ -1,6 +1,6 @@
 Name:		python-distutils-extra
 Version:	2.39
-Release:	2
+Release:	3
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
