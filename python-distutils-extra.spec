@@ -1,6 +1,6 @@
 Name:		python-distutils-extra
 Version:	2.39
-Release:	3
+Release:	4
 Summary:	Enhancements to the Python build system
 Group:		Development/Python
 License:	GPLv2+
@@ -21,7 +21,7 @@ and GNOME documentation into your build and installation process.
 Summary: Enhancements to the Python 2 build system
 Group: Development/Python
 Provides: python2-distutils-extra = %{version}-%{release}
-BuildRequires:  python2-distribute
+BuildRequires:  python2dist(setuptools)
 BuildRequires:  python2-devel
 
 
